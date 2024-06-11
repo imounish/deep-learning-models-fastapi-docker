@@ -1,0 +1,5 @@
+octmnist_test_image_0 - [3]
+octmnist_test_image_1 - [2]
+octmnist_test_image_2 - [3]
+octmnist_test_image_3 - [3]
+octmnist_test_image_4 - [0]

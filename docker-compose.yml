@@ -1,0 +1,11 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    # restart: always
+    container_name: backend
