@@ -42,3 +42,82 @@
 2024-06-11 16:38:31,284 - DEBUG - Calling on_part_data with data[134:574]
 2024-06-11 16:38:31,284 - DEBUG - Calling on_part_end with no data
 2024-06-11 16:38:31,284 - DEBUG - Calling on_end with no data
+2024-06-19 10:37:44,373 - DEBUG - Calling on_part_begin with no data
+2024-06-19 10:37:44,391 - DEBUG - Calling on_header_field with data[54:73]
+2024-06-19 10:37:44,392 - DEBUG - Calling on_header_value with data[75:124]
+2024-06-19 10:37:44,392 - DEBUG - Calling on_header_end with no data
+2024-06-19 10:37:44,392 - DEBUG - Calling on_header_field with data[126:138]
+2024-06-19 10:37:44,393 - DEBUG - Calling on_header_value with data[140:150]
+2024-06-19 10:37:44,393 - DEBUG - Calling on_header_end with no data
+2024-06-19 10:37:44,393 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 10:37:44,396 - DEBUG - Calling on_part_data with data[154:586]
+2024-06-19 10:37:44,397 - DEBUG - Calling on_part_end with no data
+2024-06-19 10:37:44,397 - DEBUG - Calling on_end with no data
+2024-06-19 12:06:27,946 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:06:28,334 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:06:28,337 - DEBUG - Attempting to acquire lock 281472088367776 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:06:28,338 - DEBUG - Lock 281472088367776 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:06:28,994 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 1585
+2024-06-19 12:06:29,005 - DEBUG - Attempting to release lock 281472088367776 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:06:29,006 - DEBUG - Lock 281472088367776 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:06:29,275 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/model.safetensors HTTP/11" 302 0
+2024-06-19 12:06:29,279 - DEBUG - Attempting to acquire lock 281472116566128 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:06:29,280 - DEBUG - Lock 281472116566128 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:06:29,285 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 12:06:29,375 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1719057101&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA1NzEwMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=EcD9zz9851YbTlg2hchanZbiUNDJvsm9-LaDpHWqxhU0U7UiC0ueDE3urbD1CPcEOey9tZuDb-45HNn1083Jd7qcCHhJZ6Aj6s6bd5GCEK0XfUBZj-MZBD2qnZMBPBySRo0vhY2vClQHGJoOHFFWttxYqPxYz97xlv06NmHJTndxrZ3xKahCe6LhEC6vkWGF2vHOqM7UlFXy4yu9MzpbVDFHOYo6RflVpj8rcBRNq-nSauktOCpCd7HLOg2klawDzY4dLO~C3zTwVQajo8oqViVtJWGBsWqijO3whOcMAJk2fuvN9GG6wyjpbLo2-ENDtIj0VRgJHgeKORZmkPQn~g__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 1625222120
+2024-06-19 12:12:29,370 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:12:30,126 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:12:30,129 - DEBUG - Attempting to acquire lock 281471851457392 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:12:30,130 - DEBUG - Lock 281471851457392 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:12:30,839 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 1585
+2024-06-19 12:12:30,845 - DEBUG - Attempting to release lock 281471851457392 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:12:30,846 - DEBUG - Lock 281471851457392 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/2d297163111d6483909070dc6de8d34236c72636.lock
+2024-06-19 12:12:31,115 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/model.safetensors HTTP/11" 302 0
+2024-06-19 12:12:31,118 - DEBUG - Attempting to acquire lock 281471842033904 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:12:31,120 - DEBUG - Lock 281471842033904 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:12:31,124 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 12:12:31,193 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1719058317&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA1ODMxN319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=PLrAx0cncEw13ESydLx0-t9zZR8zKX0amW5Lyo7gWDx-ml4FL6pSCZ8pn1B3g7k~g5nbQzQkkUsEL77zUdnJ4IJNTfKOOkKegH4WLPUVt5jsz5e~laNtwkx0dllTLQUApCnTXmXZYzl3wbC5j2alEZH8gzG0SNI4UgG8yUUQsN4AklVD~E-id~wOgWh0lFN6-m7eONVwgRqbZIXtBYzKhI0CzFH~O05e8C62JH89D36XFNEwfIGPz9xvkoRNO-kaAzLmBdQZEk-YhZmGQ4QyYhODVgboUva-KFdWRtMieyFHtS~niSG218o~yYoE-HxvXKGi3MA4LkbqT3Q34vKlvg__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 1625222120
+2024-06-19 12:15:55,212 - DEBUG - Attempting to release lock 281471842033904 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:15:55,309 - DEBUG - Lock 281471842033904 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb.lock
+2024-06-19 12:16:01,737 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/generation_config.json HTTP/11" 200 0
+2024-06-19 12:16:01,747 - DEBUG - Attempting to acquire lock 281471852303456 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/f729590ec05c715e3b922996b3a7b5c1c73fb1f7.lock
+2024-06-19 12:16:01,749 - DEBUG - Lock 281471852303456 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/f729590ec05c715e3b922996b3a7b5c1c73fb1f7.lock
+2024-06-19 12:16:01,979 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/generation_config.json HTTP/11" 200 363
+2024-06-19 12:16:01,986 - DEBUG - Attempting to release lock 281471852303456 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/f729590ec05c715e3b922996b3a7b5c1c73fb1f7.lock
+2024-06-19 12:16:01,986 - DEBUG - Lock 281471852303456 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/f729590ec05c715e3b922996b3a7b5c1c73fb1f7.lock
+2024-06-19 12:16:02,281 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/tokenizer_config.json HTTP/11" 404 0
+2024-06-19 12:16:02,680 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/vocab.json HTTP/11" 200 0
+2024-06-19 12:16:02,683 - DEBUG - Attempting to acquire lock 281471851633824 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/5606f48548d99a9829d10a96cd364b816b02cd21.lock
+2024-06-19 12:16:02,684 - DEBUG - Lock 281471851633824 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/5606f48548d99a9829d10a96cd364b816b02cd21.lock
+2024-06-19 12:16:03,043 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/vocab.json HTTP/11" 200 898823
+2024-06-19 12:16:03,828 - DEBUG - Attempting to release lock 281471851633824 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/5606f48548d99a9829d10a96cd364b816b02cd21.lock
+2024-06-19 12:16:03,829 - DEBUG - Lock 281471851633824 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/5606f48548d99a9829d10a96cd364b816b02cd21.lock
+2024-06-19 12:16:04,059 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/merges.txt HTTP/11" 200 0
+2024-06-19 12:16:04,061 - DEBUG - Attempting to acquire lock 281471860042320 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/226b0752cac7789c48f0cb3ec53eda48b7be36cc.lock
+2024-06-19 12:16:04,061 - DEBUG - Lock 281471860042320 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/226b0752cac7789c48f0cb3ec53eda48b7be36cc.lock
+2024-06-19 12:16:04,378 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/merges.txt HTTP/11" 200 456318
+2024-06-19 12:16:04,976 - DEBUG - Attempting to release lock 281471860042320 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/226b0752cac7789c48f0cb3ec53eda48b7be36cc.lock
+2024-06-19 12:16:04,977 - DEBUG - Lock 281471860042320 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/226b0752cac7789c48f0cb3ec53eda48b7be36cc.lock
+2024-06-19 12:16:05,207 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/tokenizer.json HTTP/11" 200 0
+2024-06-19 12:16:05,209 - DEBUG - Attempting to acquire lock 281471860042320 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/ad0bcbeb288f0d1373d88e0762e66357f55b8311.lock
+2024-06-19 12:16:05,210 - DEBUG - Lock 281471860042320 acquired on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/ad0bcbeb288f0d1373d88e0762e66357f55b8311.lock
+2024-06-19 12:16:05,514 - DEBUG - https://huggingface.co:443 "GET /facebook/bart-large-cnn/resolve/main/tokenizer.json HTTP/11" 200 1355863
+2024-06-19 12:16:05,914 - DEBUG - Attempting to release lock 281471860042320 on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/ad0bcbeb288f0d1373d88e0762e66357f55b8311.lock
+2024-06-19 12:16:05,914 - DEBUG - Lock 281471860042320 released on /root/.cache/huggingface/hub/.locks/models--facebook--bart-large-cnn/ad0bcbeb288f0d1373d88e0762e66357f55b8311.lock
+2024-06-19 12:16:06,144 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/added_tokens.json HTTP/11" 404 0
+2024-06-19 12:16:06,378 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/special_tokens_map.json HTTP/11" 404 0
+2024-06-19 12:16:11,611 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:16:11,943 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:16:17,994 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/generation_config.json HTTP/11" 200 0
+2024-06-19 12:16:23,164 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:16:23,557 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:16:28,955 - DEBUG - https://huggingface.co:443 "HEAD /facebook/bart-large-cnn/resolve/main/generation_config.json HTTP/11" 200 0
+2024-06-19 12:47:46,660 - ERROR - Error generating summary: index out of range in self
+2024-06-19 12:52:07,204 - ERROR - Error generating summary: index out of range in self
+2024-06-19 12:52:42,169 - ERROR - Error generating summary: index out of range in self
+2024-06-19 12:55:24,890 - ERROR - Error generating summary: index out of range in self
+2024-06-19 13:06:30,451 - ERROR - Error generating summary: index out of range in self
+2024-06-19 13:07:05,521 - ERROR - Error generating summary: index out of range in self
+2024-06-19 13:07:30,269 - ERROR - Error generating summary: index out of range in self
+2024-06-19 13:08:03,215 - ERROR - Error generating summary: index out of range in self
+2024-06-19 13:09:46,739 - ERROR - Error generating summary: index out of range in self
