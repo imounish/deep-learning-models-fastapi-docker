@@ -62,7 +62,7 @@ def root() -> dict:
 
 
 @app.post("/predict/image_classes")
-async def predict_img_caption(file: UploadFile = File(...)) -> JSONResponse:
+async def predict_img_class(file: UploadFile = File(...)) -> JSONResponse:
     """
     Endpoint to predict classes for each image among on the 1000 ImageNet classes.
 
@@ -86,14 +86,15 @@ async def predict_img_caption(file: UploadFile = File(...)) -> JSONResponse:
         predicted_class_label = predict_img_labels(inputs, img_classification_model)
 
     except Exception as exception:
-        logger.error(exception)
         raise HTTPException(status_code=400, detail=str(exception))
 
     return JSONResponse(content={"class_label": predicted_class_label})
 
 
 @app.post("/predict/text_summarize")
-async def t5_prediction(request: TextRequest, model: str = "t5") -> JSONResponse:
+async def text_summarize(
+    request: TextRequest, model: str = "t5", min: str = "30", max: str = "130"
+) -> JSONResponse:
     """
     Endpoint to summarize text using the specified model.
 
@@ -135,12 +136,12 @@ async def t5_prediction(request: TextRequest, model: str = "t5") -> JSONResponse
             # )
 
             # Load the model here or during the first start of the server
-            bart_summarizer = (
-                load_bart_pipeline()
-            )  # this would time out as the model is too large
+            # bart_summarizer = (
+            #     load_bart_pipeline()
+            # )  # this would time out as the model is too large
 
             output = bart_summarizer(
-                request.text, max_length=130, min_length=30, do_sample=False
+                request.text, max_length=int(max), min_length=int(min), do_sample=False
             )
             summary = output[0]["summary_text"]
 
