@@ -1,15 +1,23 @@
 import logging
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from utils import load_image, load_img_classification_model, predict_img_labels
+from utils import (
+    load_image,
+    load_img_classification_model,
+    predict_img_labels,
+    load_tokenizer,
+    load_t5_model,
+    load_bart_pipeline,
+)
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-from transformers import pipeline
 
 app = FastAPI()
 
+# Allow all origins for CORS
 origins = ["*"]
 
+# Set up CORS middleware to allow all origins, credentials, methods, and headers
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
@@ -17,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# basic logging configuration
+# Set up basic logging configuration
 logging.basicConfig(
     level=logging.DEBUG,
     filename="app.log",
@@ -28,66 +36,118 @@ logging.basicConfig(
 # Install logger
 logger = logging.getLogger(__name__)
 
-# Set the model path
-model_path = "model/best_model_OCTMNIST.pth"
 
-# Initialize the summarizer pipeline
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-
-
+# Request Class for the text input
 class TextRequest(BaseModel):
     text: str
 
 
+# Load the models when the server first starts
+img_classification_model = load_img_classification_model()
+t5_model = load_t5_model()
+bart_summarizer = (
+    load_bart_pipeline()
+)  # loading bart model would take up time as the model is large
+
+
 @app.get("/")
-def root():
+def root() -> dict:
+    """
+    Root endpoint returning a welcome message.
+
+    Returns:
+        dict: A dictionary containing a welcome message.
+    """
     return {"message": "Welcome to the ML Model API"}
 
 
 @app.post("/predict/image_classes")
-async def predict_img_caption(file: UploadFile = File(...)):
+async def predict_img_caption(file: UploadFile = File(...)) -> JSONResponse:
+    """
+    Endpoint to predict classes for each image among on the 1000 ImageNet classes.
+
+    Args:
+        file (UploadFile): The uploaded image file.
+
+    Returns:
+        JSONResponse: A JSON response containing the predicted class label.
+
+    Raises:
+        HTTPException: If any error occurs during processing.
+    """
     try:
+        # Load image from the uploaded file
         inputs = load_image(await file.read())
 
-        model = load_img_classification_model()
+        # Load the model here or during the first start of the server
+        # img_classification_model = load_img_classification_model()
 
-        predicted_class_label = predict_img_labels(inputs, model)
+        # Predict the class label for the input image
+        predicted_class_label = predict_img_labels(inputs, img_classification_model)
 
     except Exception as exception:
+        logger.error(exception)
         raise HTTPException(status_code=400, detail=str(exception))
 
     return JSONResponse(content={"class_label": predicted_class_label})
 
 
-# def preprocess_text(text: str) -> str:
-#     """
-#     Preprocess the input text by removing unnecessary whitespace and normalizing.
-#     """
-#     # Remove extra whitespace
-#     text = re.sub(r'\s+', ' ', text)
-#     # Remove leading and trailing whitespace
-#     text = text.strip()
-#     return text
+@app.post("/predict/text_summarize")
+async def t5_prediction(request: TextRequest, model: str = "t5") -> JSONResponse:
+    """
+    Endpoint to summarize text using the specified model.
 
+    Args:
+        request (TextRequest): The request body containing the text to summarize.
+        model (str): The model to use for summarization (default is "t5").
 
-@app.post("/summarize")
-async def summarize_text(request: TextRequest):
-    text = request.text
+    Returns:
+        JSONResponse: A JSON response containing the summary.
 
-    if not text.strip():
-        raise HTTPException(status_code=400, detail="Text cannot be empty")
-
+    Raises:
+        HTTPException: If any error occurs during processing.
+    """
     try:
-        # Generate summary using the pipeline
-        summary = summarizer(text, max_length=130, min_length=30, do_sample=False)
-        summary_text = summary[0]["summary_text"]
-    except Exception as e:
-        logger.error(f"Error generating summary: {e}")
-        raise HTTPException(status_code=500, detail="Error generating summary")
+        # Raise an exception if the posted string is empty
+        if not request.text.strip():
+            raise HTTPException(status_code=400, detail=str("Text cannot be empty"))
 
-    return {"summary": summary_text}
+        if model == "t5":
+            # preprocess the input text
+            sequence = request.text
+            tokenizer = load_tokenizer()
+            inputs = tokenizer.encode(
+                "summarize: " + sequence,
+                return_tensors="pt",
+                max_length=512,
+                truncation=True,
+            )
+            # Load the model here or during the first start of the server
+            # t5_model = load_t5_model()
 
+            # Generate summary using the T5 model
+            output = t5_model.generate(inputs, min_length=80, max_length=100)
+            summary = tokenizer.decode(output[0])
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+        elif model == "bart":
+            # raise HTTPException(
+            #     status_code=400, detail=str("We do not support BART model yet.")
+            # )
+
+            # Load the model here or during the first start of the server
+            bart_summarizer = (
+                load_bart_pipeline()
+            )  # this would time out as the model is too large
+
+            output = bart_summarizer(
+                request.text, max_length=130, min_length=30, do_sample=False
+            )
+            summary = output[0]["summary_text"]
+
+        else:
+            raise HTTPException(status_code=400, detail=str("Invalid model specified."))
+
+    except Exception as exception:
+        raise HTTPException(status_code=400, detail=str(exception))
+
+    return JSONResponse(content={"summary": summary})
