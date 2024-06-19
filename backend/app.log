@@ -42,3 +42,1071 @@
 2024-06-11 16:38:31,284 - DEBUG - Calling on_part_data with data[134:574]
 2024-06-11 16:38:31,284 - DEBUG - Calling on_part_end with no data
 2024-06-11 16:38:31,284 - DEBUG - Calling on_end with no data
+2024-06-19 10:57:51,028 - DEBUG - Calling on_part_begin with no data
+2024-06-19 10:57:51,030 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 10:57:51,030 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 10:57:51,031 - DEBUG - Calling on_header_end with no data
+2024-06-19 10:57:51,031 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 10:57:51,031 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 10:57:51,032 - DEBUG - Calling on_header_end with no data
+2024-06-19 10:57:51,032 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 10:57:51,033 - DEBUG - Calling on_part_data with data[130:14288]
+2024-06-19 10:57:51,035 - DEBUG - Calling on_part_data with data[0:44352]
+2024-06-19 10:57:51,037 - DEBUG - Calling on_part_data with data[0:31320]
+2024-06-19 10:57:51,038 - DEBUG - Calling on_part_data with data[0:30647]
+2024-06-19 10:57:51,038 - DEBUG - Calling on_part_end with no data
+2024-06-19 10:57:51,039 - DEBUG - Calling on_end with no data
+2024-06-19 10:57:51,088 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 10:57:51,462 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 10:57:51,467 - DEBUG - Attempting to acquire lock 281472838061472 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/daf3e4156b07a270c1be2ea9955dd5877cfdbce5.lock
+2024-06-19 10:57:51,468 - DEBUG - Lock 281472838061472 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/daf3e4156b07a270c1be2ea9955dd5877cfdbce5.lock
+2024-06-19 10:57:52,195 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/config.json HTTP/11" 200 4609
+2024-06-19 10:57:52,216 - DEBUG - Attempting to release lock 281472838061472 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/daf3e4156b07a270c1be2ea9955dd5877cfdbce5.lock
+2024-06-19 10:57:52,217 - DEBUG - Lock 281472838061472 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/daf3e4156b07a270c1be2ea9955dd5877cfdbce5.lock
+2024-06-19 10:57:52,466 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 10:57:52,729 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 10:57:52,983 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/model.safetensors.index.json HTTP/11" 404 0
+2024-06-19 10:57:53,320 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/pytorch_model.bin HTTP/11" 302 0
+2024-06-19 10:57:53,323 - DEBUG - Attempting to acquire lock 281472830573504 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/2605a69b760d0b218c3b5d2069ba070d28f279a16ce4bc87bf019b75a91553e6.lock
+2024-06-19 10:57:53,324 - DEBUG - Lock 281472830573504 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/2605a69b760d0b218c3b5d2069ba070d28f279a16ce4bc87bf019b75a91553e6.lock
+2024-06-19 10:57:53,328 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 10:57:53,431 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/2605a69b760d0b218c3b5d2069ba070d28f279a16ce4bc87bf019b75a91553e6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1719053699&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA1MzY5OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9ubHBjb25uZWN0L3ZpdC1ncHQyLWltYWdlLWNhcHRpb25pbmcvMjYwNWE2OWI3NjBkMGIyMThjM2I1ZDIwNjliYTA3MGQyOGYyNzlhMTZjZTRiYzg3YmYwMTliNzVhOTE1NTNlNj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=gkk8EvClBBOWjsFmvyWVegWwM2VaCmOSLo33mSfXZST8L~PeoDzkSYkOxpShfvvKv~F-qoFnlsnmPcjzE1CVZbCMNEjwfPfpWx8DsmB3LE2ZaBu3Z7Z~XYhdk0LxsVl3EpjKXHivjW1FiVjBrf5SmpHUMPD3MCnQaeh~LQPTbzO6sK4~89xEvqfb2zRptyjj0FTB48DP1~SKlaAjbeypzbemWYrBwCiXyg3V7RMTKQJal5mBh4jirD-CmvVuvWjNs-mlM4Ycfy08HVOr~4R8LPiQG-Lff0FvU3-MIQJeyYftxwNZKLfqu4-wNQHl31C8tlKzvN4XbevBznE3l289JQ__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 982141993
+2024-06-19 11:02:26,349 - DEBUG - Attempting to release lock 281472830573504 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/2605a69b760d0b218c3b5d2069ba070d28f279a16ce4bc87bf019b75a91553e6.lock
+2024-06-19 11:02:26,354 - DEBUG - Lock 281472830573504 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/2605a69b760d0b218c3b5d2069ba070d28f279a16ce4bc87bf019b75a91553e6.lock
+2024-06-19 11:02:26,360 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 11:02:27,193 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 11:02:36,667 - DEBUG - Resetting dropped connection: huggingface.co
+2024-06-19 11:02:37,489 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/generation_config.json HTTP/11" 404 0
+2024-06-19 11:02:38,237 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 11:02:38,240 - DEBUG - Attempting to acquire lock 281472839291040 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/b7414e73cf93e2818ed2c82d3d7bfc0d85991c13.lock
+2024-06-19 11:02:38,242 - DEBUG - Lock 281472839291040 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/b7414e73cf93e2818ed2c82d3d7bfc0d85991c13.lock
+2024-06-19 11:02:38,611 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json HTTP/11" 200 228
+2024-06-19 11:02:38,616 - DEBUG - Attempting to release lock 281472839291040 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/b7414e73cf93e2818ed2c82d3d7bfc0d85991c13.lock
+2024-06-19 11:02:38,617 - DEBUG - Lock 281472839291040 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/b7414e73cf93e2818ed2c82d3d7bfc0d85991c13.lock
+2024-06-19 11:02:38,872 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-06-19 11:02:38,875 - DEBUG - Attempting to acquire lock 281472824573248 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7592fbdc36f66acf20f814596b3fbad133450189.lock
+2024-06-19 11:02:38,877 - DEBUG - Lock 281472824573248 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7592fbdc36f66acf20f814596b3fbad133450189.lock
+2024-06-19 11:02:39,223 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json HTTP/11" 200 241
+2024-06-19 11:02:39,231 - DEBUG - Attempting to release lock 281472824573248 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7592fbdc36f66acf20f814596b3fbad133450189.lock
+2024-06-19 11:02:39,232 - DEBUG - Lock 281472824573248 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7592fbdc36f66acf20f814596b3fbad133450189.lock
+2024-06-19 11:02:39,980 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/vocab.json HTTP/11" 200 0
+2024-06-19 11:02:39,983 - DEBUG - Attempting to acquire lock 281472770055760 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/84ef7fb594b5c0979e48bdeddb60a0adef33df0b.lock
+2024-06-19 11:02:39,984 - DEBUG - Lock 281472770055760 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/84ef7fb594b5c0979e48bdeddb60a0adef33df0b.lock
+2024-06-19 11:02:40,256 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/vocab.json HTTP/11" 200 798156
+2024-06-19 11:02:41,067 - DEBUG - Attempting to release lock 281472770055760 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/84ef7fb594b5c0979e48bdeddb60a0adef33df0b.lock
+2024-06-19 11:02:41,067 - DEBUG - Lock 281472770055760 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/84ef7fb594b5c0979e48bdeddb60a0adef33df0b.lock
+2024-06-19 11:02:41,345 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/merges.txt HTTP/11" 200 0
+2024-06-19 11:02:41,348 - DEBUG - Attempting to acquire lock 281472844315584 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/6636bda4a1fd7a63653dffb22683b8162c8de956.lock
+2024-06-19 11:02:41,350 - DEBUG - Lock 281472844315584 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/6636bda4a1fd7a63653dffb22683b8162c8de956.lock
+2024-06-19 11:02:41,687 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/merges.txt HTTP/11" 200 456356
+2024-06-19 11:02:42,235 - DEBUG - Attempting to release lock 281472844315584 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/6636bda4a1fd7a63653dffb22683b8162c8de956.lock
+2024-06-19 11:02:42,236 - DEBUG - Lock 281472844315584 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/6636bda4a1fd7a63653dffb22683b8162c8de956.lock
+2024-06-19 11:02:42,487 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer.json HTTP/11" 200 0
+2024-06-19 11:02:42,490 - DEBUG - Attempting to acquire lock 281472770049472 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/47a347e7d247c4f619a407518d5930a3a7702388.lock
+2024-06-19 11:02:42,491 - DEBUG - Lock 281472770049472 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/47a347e7d247c4f619a407518d5930a3a7702388.lock
+2024-06-19 11:02:42,751 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/tokenizer.json HTTP/11" 200 1355446
+2024-06-19 11:02:43,167 - DEBUG - Attempting to release lock 281472770049472 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/47a347e7d247c4f619a407518d5930a3a7702388.lock
+2024-06-19 11:02:43,168 - DEBUG - Lock 281472770049472 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/47a347e7d247c4f619a407518d5930a3a7702388.lock
+2024-06-19 11:02:43,527 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/added_tokens.json HTTP/11" 404 0
+2024-06-19 11:02:43,785 - DEBUG - https://huggingface.co:443 "HEAD /nlpconnect/vit-gpt2-image-captioning/resolve/main/special_tokens_map.json HTTP/11" 200 0
+2024-06-19 11:02:43,788 - DEBUG - Attempting to acquire lock 281472844315584 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7fd3cac51212ab95a8d5a7c37573c95fe0c5021d.lock
+2024-06-19 11:02:43,789 - DEBUG - Lock 281472844315584 acquired on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7fd3cac51212ab95a8d5a7c37573c95fe0c5021d.lock
+2024-06-19 11:02:44,142 - DEBUG - https://huggingface.co:443 "GET /nlpconnect/vit-gpt2-image-captioning/resolve/main/special_tokens_map.json HTTP/11" 200 120
+2024-06-19 11:02:44,146 - DEBUG - Attempting to release lock 281472844315584 on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7fd3cac51212ab95a8d5a7c37573c95fe0c5021d.lock
+2024-06-19 11:02:44,147 - DEBUG - Lock 281472844315584 released on /root/.cache/huggingface/hub/.locks/models--nlpconnect--vit-gpt2-image-captioning/7fd3cac51212ab95a8d5a7c37573c95fe0c5021d.lock
+2024-06-19 11:08:52,559 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:08:52,559 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:08:52,560 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:08:52,560 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:08:52,560 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:08:52,560 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:08:52,560 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:08:52,560 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:08:52,560 - DEBUG - Calling on_part_data with data[130:45864]
+2024-06-19 11:08:52,561 - DEBUG - Calling on_part_data with data[0:55144]
+2024-06-19 11:08:52,561 - DEBUG - Calling on_part_data with data[0:19599]
+2024-06-19 11:08:52,562 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:08:52,562 - DEBUG - Calling on_end with no data
+2024-06-19 11:15:32,934 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:15:32,935 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:15:32,935 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:15:32,936 - DEBUG - Calling on_part_data with data[130:45992]
+2024-06-19 11:15:32,936 - DEBUG - Calling on_part_data with data[0:74615]
+2024-06-19 11:15:32,936 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:15:32,937 - DEBUG - Calling on_end with no data
+2024-06-19 11:15:56,756 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:15:56,758 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:15:56,758 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:15:56,758 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:15:56,759 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:15:56,759 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:15:56,759 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:15:56,759 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:15:56,760 - DEBUG - Calling on_part_data with data[130:44160]
+2024-06-19 11:15:56,762 - DEBUG - Calling on_part_data with data[0:76447]
+2024-06-19 11:15:56,762 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:15:56,763 - DEBUG - Calling on_end with no data
+2024-06-19 11:16:37,302 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:16:37,302 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:16:37,303 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:16:37,303 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:16:37,303 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:16:37,303 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:16:37,303 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:16:37,303 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:16:37,304 - DEBUG - Calling on_part_data with data[130:46376]
+2024-06-19 11:16:37,304 - DEBUG - Calling on_part_data with data[0:74231]
+2024-06-19 11:16:37,304 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:16:37,304 - DEBUG - Calling on_end with no data
+2024-06-19 11:17:07,197 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:17:07,199 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:17:07,200 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:17:07,200 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:17:07,200 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:17:07,201 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:17:07,201 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:17:07,201 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:17:07,202 - DEBUG - Calling on_part_data with data[130:14288]
+2024-06-19 11:17:07,203 - DEBUG - Calling on_part_data with data[0:45800]
+2024-06-19 11:17:07,205 - DEBUG - Calling on_part_data with data[0:60519]
+2024-06-19 11:17:07,205 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:17:07,206 - DEBUG - Calling on_end with no data
+2024-06-19 11:18:35,760 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:18:35,760 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:18:35,760 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:18:35,761 - DEBUG - Calling on_part_data with data[130:45736]
+2024-06-19 11:18:35,761 - DEBUG - Calling on_part_data with data[0:65408]
+2024-06-19 11:18:35,761 - DEBUG - Calling on_part_data with data[0:9463]
+2024-06-19 11:18:35,761 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:18:35,762 - DEBUG - Calling on_end with no data
+2024-06-19 11:18:35,766 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 11:18:36,081 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 11:18:36,091 - DEBUG - Attempting to acquire lock 281472266766672 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:18:36,092 - DEBUG - Lock 281472266766672 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:18:36,737 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/config.json HTTP/11" 200 2445
+2024-06-19 11:18:36,752 - DEBUG - Attempting to release lock 281472266766672 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:18:36,753 - DEBUG - Lock 281472266766672 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:18:37,450 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/configuration_florence2.py HTTP/11" 200 0
+2024-06-19 11:18:37,452 - DEBUG - Attempting to acquire lock 281472266766672 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:18:37,453 - DEBUG - Lock 281472266766672 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:18:37,703 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/configuration_florence2.py HTTP/11" 200 15125
+2024-06-19 11:18:37,707 - DEBUG - Attempting to release lock 281472266766672 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:18:37,707 - DEBUG - Lock 281472266766672 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:18:38,017 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/modeling_florence2.py HTTP/11" 200 0
+2024-06-19 11:18:38,020 - DEBUG - Attempting to acquire lock 281472264883040 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:18:38,022 - DEBUG - Lock 281472264883040 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:18:38,326 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/modeling_florence2.py HTTP/11" 200 126723
+2024-06-19 11:18:38,680 - DEBUG - Attempting to release lock 281472264883040 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:18:38,682 - DEBUG - Lock 281472264883040 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:36:16,002 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:36:16,006 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:36:16,006 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:36:16,006 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:36:16,006 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:36:16,007 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:36:16,007 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:36:16,007 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:36:16,010 - DEBUG - Calling on_part_data with data[130:42712]
+2024-06-19 11:36:16,010 - DEBUG - Calling on_part_data with data[0:37112]
+2024-06-19 11:36:16,011 - DEBUG - Calling on_part_data with data[0:40783]
+2024-06-19 11:36:16,011 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:36:16,011 - DEBUG - Calling on_end with no data
+2024-06-19 11:36:16,034 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 11:36:16,844 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 11:36:16,846 - DEBUG - Attempting to acquire lock 281472286330800 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:36:16,846 - DEBUG - Lock 281472286330800 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:36:17,549 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/config.json HTTP/11" 200 2445
+2024-06-19 11:36:17,554 - DEBUG - Attempting to release lock 281472286330800 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:36:17,555 - DEBUG - Lock 281472286330800 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/7f86bff3651a9e0d06a0381c1bcdabdfc6d4115c.lock
+2024-06-19 11:36:17,889 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/configuration_florence2.py HTTP/11" 200 0
+2024-06-19 11:36:17,892 - DEBUG - Attempting to acquire lock 281472258323952 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:36:17,893 - DEBUG - Lock 281472258323952 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:36:18,299 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/configuration_florence2.py HTTP/11" 200 15125
+2024-06-19 11:36:18,301 - DEBUG - Attempting to release lock 281472258323952 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:36:18,301 - DEBUG - Lock 281472258323952 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/622f74997c5612ff68d0e55063714f291d159166.lock
+2024-06-19 11:36:18,599 - DEBUG - https://huggingface.co:443 "HEAD /microsoft/Florence-2-large/resolve/main/modeling_florence2.py HTTP/11" 200 0
+2024-06-19 11:36:18,600 - DEBUG - Attempting to acquire lock 281472246891920 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:36:18,600 - DEBUG - Lock 281472246891920 acquired on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:36:19,323 - DEBUG - https://huggingface.co:443 "GET /microsoft/Florence-2-large/resolve/main/modeling_florence2.py HTTP/11" 200 126723
+2024-06-19 11:36:19,671 - DEBUG - Attempting to release lock 281472246891920 on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:36:19,671 - DEBUG - Lock 281472246891920 released on /root/.cache/huggingface/hub/.locks/models--microsoft--Florence-2-large/3666face6ea84ed290be8219b05ee72e9047c3e2.lock
+2024-06-19 11:44:35,029 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:44:35,030 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:44:35,031 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:44:35,031 - DEBUG - Calling on_part_data with data[130:45608]
+2024-06-19 11:44:35,033 - DEBUG - Calling on_part_data with data[0:74999]
+2024-06-19 11:44:35,034 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:44:35,034 - DEBUG - Calling on_end with no data
+2024-06-19 11:44:35,038 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 11:44:35,839 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 11:44:35,843 - DEBUG - Attempting to acquire lock 281472727873536 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/9edc3be35940faf780eb39e0191d0b8a2b13c329.lock
+2024-06-19 11:44:35,844 - DEBUG - Lock 281472727873536 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/9edc3be35940faf780eb39e0191d0b8a2b13c329.lock
+2024-06-19 11:44:36,106 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/preprocessor_config.json HTTP/11" 200 445
+2024-06-19 11:44:36,116 - DEBUG - Attempting to release lock 281472727873536 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/9edc3be35940faf780eb39e0191d0b8a2b13c329.lock
+2024-06-19 11:44:36,116 - DEBUG - Lock 281472727873536 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/9edc3be35940faf780eb39e0191d0b8a2b13c329.lock
+2024-06-19 11:44:36,785 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-06-19 11:44:36,786 - DEBUG - Attempting to acquire lock 281472609219024 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/3529d5f768b8b1ccc65b80b78fb43e16069109c1.lock
+2024-06-19 11:44:36,787 - DEBUG - Lock 281472609219024 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/3529d5f768b8b1ccc65b80b78fb43e16069109c1.lock
+2024-06-19 11:44:37,103 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/tokenizer_config.json HTTP/11" 200 527
+2024-06-19 11:44:37,106 - DEBUG - Attempting to release lock 281472609219024 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/3529d5f768b8b1ccc65b80b78fb43e16069109c1.lock
+2024-06-19 11:44:37,107 - DEBUG - Lock 281472609219024 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/3529d5f768b8b1ccc65b80b78fb43e16069109c1.lock
+2024-06-19 11:44:37,407 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/vocab.txt HTTP/11" 200 0
+2024-06-19 11:44:37,410 - DEBUG - Attempting to acquire lock 281472610111696 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 11:44:37,411 - DEBUG - Lock 281472610111696 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 11:44:37,718 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/vocab.txt HTTP/11" 200 231508
+2024-06-19 11:44:38,125 - DEBUG - Attempting to release lock 281472610111696 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 11:44:38,126 - DEBUG - Lock 281472610111696 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 11:44:38,387 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/tokenizer.json HTTP/11" 200 0
+2024-06-19 11:44:38,390 - DEBUG - Attempting to acquire lock 281472610120336 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 11:44:38,391 - DEBUG - Lock 281472610120336 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 11:44:38,743 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/tokenizer.json HTTP/11" 200 711396
+2024-06-19 11:44:38,956 - DEBUG - Attempting to release lock 281472610120336 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 11:44:38,957 - DEBUG - Lock 281472610120336 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 11:44:39,250 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/added_tokens.json HTTP/11" 404 0
+2024-06-19 11:44:39,658 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/special_tokens_map.json HTTP/11" 200 0
+2024-06-19 11:44:39,661 - DEBUG - Attempting to acquire lock 281472610121248 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 11:44:39,662 - DEBUG - Lock 281472610121248 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 11:44:39,968 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/special_tokens_map.json HTTP/11" 200 125
+2024-06-19 11:44:39,972 - DEBUG - Attempting to release lock 281472610121248 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 11:44:39,973 - DEBUG - Lock 281472610121248 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 11:44:40,377 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/processor_config.json HTTP/11" 404 0
+2024-06-19 11:44:40,789 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 11:44:40,792 - DEBUG - Attempting to acquire lock 281472610120720 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139.lock
+2024-06-19 11:44:40,793 - DEBUG - Lock 281472610120720 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139.lock
+2024-06-19 11:44:42,016 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-large/resolve/main/config.json HTTP/11" 200 4597
+2024-06-19 11:44:42,021 - DEBUG - Attempting to release lock 281472610120720 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139.lock
+2024-06-19 11:44:42,021 - DEBUG - Lock 281472610120720 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/0aa1a9f9cd0404a26dd7e6f13c16eb4259939139.lock
+2024-06-19 11:44:42,284 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 11:44:42,630 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/model.safetensors HTTP/11" 302 0
+2024-06-19 11:44:42,633 - DEBUG - Attempting to acquire lock 281472610122592 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f.lock
+2024-06-19 11:44:42,634 - DEBUG - Lock 281472610122592 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f.lock
+2024-06-19 11:44:42,638 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 11:44:42,760 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /repos/f0/78/f078b67b9a0ce764974aa7f9bed3b21a12d93d4a709585392850de4a6831327b/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1719056682&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA1NjY4Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy9mMC83OC9mMDc4YjY3YjlhMGNlNzY0OTc0YWE3ZjliZWQzYjIxYTEyZDkzZDRhNzA5NTg1MzkyODUwZGU0YTY4MzEzMjdiL2ViYzg2NzU4NmI4MzE4NjQ3ZGQ3Yjc1ZWY4ZTUyZjkzZjg5Yjk4YWM3ZGNiZDA0ZDEwMjE5ZDMzYjlhNjhjNmY~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=luwd52BOzaMKBW4RvFwvIHfd8cxXZloPDX8yC8Vsbe46HYCa18-MNguVOlj40yCsJ8CNQuB5aCvVOIG~5L9J-0WnryKe0idBvIj9BvhxpufsUFkKXE1XUDcJZZH0TIrBn7SIg2nPTVAKRvvOyaoUCLwsUFCuXaEgKJ1uFAe9b63A3eQ56gbQtcLjfNdLdbbS45KCr-Hlgz~Yh0WAcR76eJaYMW8fS39Xmr0i7MeQJ~KcrkrhE41NGGc4hEtLXBGsZWXqrzluU5p8KnyJns7p5WgY2DnJl6kg6rlESEP16YSRCj3KdOb3y9mu9InFMNpCCT2cSjgRmIr3mDkD-gg1dQ__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 1879014680
+2024-06-19 11:52:51,016 - DEBUG - Attempting to release lock 281472610122592 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f.lock
+2024-06-19 11:52:51,023 - DEBUG - Lock 281472610122592 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-large/ebc867586b8318647dd7b75ef8e52f93f89b98ac7dcbd04d10219d33b9a68c6f.lock
+2024-06-19 11:52:55,265 - DEBUG - Resetting dropped connection: huggingface.co
+2024-06-19 11:52:56,076 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-large/resolve/main/generation_config.json HTTP/11" 404 0
+2024-06-19 11:53:08,854 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:53:08,855 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:53:08,855 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:53:08,855 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,855 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:53:08,855 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:53:08,856 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,856 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:53:08,856 - DEBUG - Calling on_part_data with data[130:45440]
+2024-06-19 11:53:08,857 - DEBUG - Calling on_part_data with data[0:45968]
+2024-06-19 11:53:08,858 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:53:08,858 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:53:08,858 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:53:08,858 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,859 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:53:08,859 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:53:08,859 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,859 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:53:08,859 - DEBUG - Calling on_part_data with data[130:45864]
+2024-06-19 11:53:08,860 - DEBUG - Calling on_part_data with data[0:29199]
+2024-06-19 11:53:08,860 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:53:08,860 - DEBUG - Calling on_end with no data
+2024-06-19 11:53:08,864 - DEBUG - Calling on_part_data with data[0:60936]
+2024-06-19 11:53:08,864 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:53:08,864 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:53:08,864 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:53:08,864 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,864 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:53:08,864 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:53:08,865 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,865 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:53:08,865 - DEBUG - Calling on_part_data with data[130:45736]
+2024-06-19 11:53:08,866 - DEBUG - Calling on_part_data with data[0:13807]
+2024-06-19 11:53:08,866 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:53:08,866 - DEBUG - Calling on_end with no data
+2024-06-19 11:53:08,867 - DEBUG - Calling on_part_data with data[0:65408]
+2024-06-19 11:53:08,867 - DEBUG - Calling on_part_begin with no data
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 11:53:08,867 - DEBUG - Calling on_header_end with no data
+2024-06-19 11:53:08,868 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 11:53:08,868 - DEBUG - Calling on_part_data with data[130:45992]
+2024-06-19 11:53:08,868 - DEBUG - Calling on_part_data with data[0:9463]
+2024-06-19 11:53:08,868 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:53:08,868 - DEBUG - Calling on_end with no data
+2024-06-19 11:53:08,869 - DEBUG - Calling on_part_data with data[0:74615]
+2024-06-19 11:53:08,869 - INFO - Starting to process the image...
+2024-06-19 11:53:08,869 - DEBUG - Calling on_part_end with no data
+2024-06-19 11:53:08,869 - DEBUG - Calling on_end with no data
+2024-06-19 11:53:08,872 - INFO - Starting to process the image...
+2024-06-19 11:53:08,872 - INFO - Starting to process the image...
+2024-06-19 11:53:08,872 - INFO - Starting to process the image...
+2024-06-19 12:17:13,323 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:17:13,326 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:17:13,326 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 12:17:13,327 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:17:13,327 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 12:17:13,327 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 12:17:13,327 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:17:13,327 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:17:13,329 - DEBUG - Calling on_part_data with data[130:45608]
+2024-06-19 12:17:13,331 - DEBUG - Calling on_part_data with data[0:31320]
+2024-06-19 12:17:13,332 - DEBUG - Calling on_part_data with data[0:31315]
+2024-06-19 12:17:13,332 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:17:13,333 - DEBUG - Calling on_part_data with data[31316:31320]
+2024-06-19 12:17:13,333 - DEBUG - Calling on_part_data with data[0:12359]
+2024-06-19 12:17:13,334 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:17:13,334 - DEBUG - Calling on_end with no data
+2024-06-19 12:17:13,355 - INFO - Starting to process the image...
+2024-06-19 12:18:36,250 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:18:36,254 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:18:36,255 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 12:18:36,255 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:18:36,255 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 12:18:36,255 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 12:18:36,256 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:18:36,256 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:18:36,257 - DEBUG - Calling on_part_data with data[130:44160]
+2024-06-19 12:18:36,258 - DEBUG - Calling on_part_data with data[0:76447]
+2024-06-19 12:18:36,258 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:18:36,259 - DEBUG - Calling on_end with no data
+2024-06-19 12:18:36,282 - INFO - Starting to process the image...
+2024-06-19 12:19:14,189 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 12:19:14,190 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:19:14,190 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:19:14,191 - DEBUG - Calling on_part_data with data[130:45736]
+2024-06-19 12:19:14,191 - DEBUG - Calling on_part_data with data[0:48568]
+2024-06-19 12:19:14,191 - DEBUG - Calling on_part_data with data[0:26303]
+2024-06-19 12:19:14,192 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:19:14,192 - DEBUG - Calling on_end with no data
+2024-06-19 12:19:14,198 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:19:14,944 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 12:19:14,949 - DEBUG - Attempting to acquire lock 281472048621584 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/6573d0934c7c476133f6885e97be9f7e36d14bed.lock
+2024-06-19 12:19:14,951 - DEBUG - Lock 281472048621584 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/6573d0934c7c476133f6885e97be9f7e36d14bed.lock
+2024-06-19 12:19:15,612 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/preprocessor_config.json HTTP/11" 200 287
+2024-06-19 12:19:15,634 - DEBUG - Attempting to release lock 281472048621584 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/6573d0934c7c476133f6885e97be9f7e36d14bed.lock
+2024-06-19 12:19:15,635 - DEBUG - Lock 281472048621584 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/6573d0934c7c476133f6885e97be9f7e36d14bed.lock
+2024-06-19 12:19:16,404 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-06-19 12:19:16,407 - DEBUG - Attempting to acquire lock 281471968604000 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/c73526e58988f76f1e1f28995c79a41a09e4b1ab.lock
+2024-06-19 12:19:16,407 - DEBUG - Lock 281471968604000 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/c73526e58988f76f1e1f28995c79a41a09e4b1ab.lock
+2024-06-19 12:19:16,646 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/tokenizer_config.json HTTP/11" 200 506
+2024-06-19 12:19:16,651 - DEBUG - Attempting to release lock 281471968604000 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/c73526e58988f76f1e1f28995c79a41a09e4b1ab.lock
+2024-06-19 12:19:16,654 - DEBUG - Lock 281471968604000 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/c73526e58988f76f1e1f28995c79a41a09e4b1ab.lock
+2024-06-19 12:19:16,904 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/vocab.txt HTTP/11" 200 0
+2024-06-19 12:19:16,906 - DEBUG - Attempting to acquire lock 281471968599392 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 12:19:16,907 - DEBUG - Lock 281471968599392 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 12:19:17,224 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/vocab.txt HTTP/11" 200 231508
+2024-06-19 12:19:17,608 - DEBUG - Attempting to release lock 281471968599392 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 12:19:17,609 - DEBUG - Lock 281471968599392 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2024-06-19 12:19:17,857 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/tokenizer.json HTTP/11" 200 0
+2024-06-19 12:19:17,860 - DEBUG - Attempting to acquire lock 281471968603712 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 12:19:17,861 - DEBUG - Lock 281471968603712 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 12:19:18,556 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/tokenizer.json HTTP/11" 200 711396
+2024-06-19 12:19:19,342 - DEBUG - Attempting to release lock 281471968603712 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 12:19:19,343 - DEBUG - Lock 281471968603712 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/688882a79f44442ddc1f60d70334a7ff5df0fb47.lock
+2024-06-19 12:19:19,588 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/added_tokens.json HTTP/11" 404 0
+2024-06-19 12:19:19,887 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/special_tokens_map.json HTTP/11" 200 0
+2024-06-19 12:19:19,890 - DEBUG - Attempting to acquire lock 281471968598864 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 12:19:19,891 - DEBUG - Lock 281471968598864 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 12:19:20,131 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/special_tokens_map.json HTTP/11" 200 125
+2024-06-19 12:19:20,134 - DEBUG - Attempting to release lock 281471968598864 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 12:19:20,135 - DEBUG - Lock 281471968598864 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/a8b3208c2884c4efb86e49300fdd3dc877220cdf.lock
+2024-06-19 12:19:20,445 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/processor_config.json HTTP/11" 404 0
+2024-06-19 12:19:20,496 - INFO - Starting to process the image...
+2024-06-19 12:19:20,533 - INFO - Processed the image
+2024-06-19 12:19:20,533 - INFO - Starting to load the model...
+2024-06-19 12:19:20,772 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:19:20,775 - DEBUG - Attempting to acquire lock 281472044034640 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/097cf86f841795297c18434d5753a83bd0eecdb1.lock
+2024-06-19 12:19:20,777 - DEBUG - Lock 281472044034640 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/097cf86f841795297c18434d5753a83bd0eecdb1.lock
+2024-06-19 12:19:21,023 - DEBUG - https://huggingface.co:443 "GET /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/11" 200 4563
+2024-06-19 12:19:21,028 - DEBUG - Attempting to release lock 281472044034640 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/097cf86f841795297c18434d5753a83bd0eecdb1.lock
+2024-06-19 12:19:21,029 - DEBUG - Lock 281472044034640 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/097cf86f841795297c18434d5753a83bd0eecdb1.lock
+2024-06-19 12:19:21,319 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:19:21,626 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:19:21,871 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors.index.json HTTP/11" 404 0
+2024-06-19 12:19:22,137 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/pytorch_model.bin HTTP/11" 302 0
+2024-06-19 12:19:22,138 - DEBUG - Attempting to acquire lock 281471958825536 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767.lock
+2024-06-19 12:19:22,139 - DEBUG - Lock 281471958825536 acquired on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767.lock
+2024-06-19 12:19:22,144 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 12:19:22,238 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /repos/f1/cb/f1cbe4cfb2a267026632ce513d5918162e03df2ee28456145ba8a1d25cf39aad/d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1719058762&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA1ODc2Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy9mMS9jYi9mMWNiZTRjZmIyYTI2NzAyNjYzMmNlNTEzZDU5MTgxNjJlMDNkZjJlZTI4NDU2MTQ1YmE4YTFkMjVjZjM5YWFkL2Q2NjM4NjUxYTU1MjZjYzJlZGU1NmYyYjUxMDRkNjg1MWIwNzU1ODE2ZDIyMGU1ZTA0Njg3MDQzMDE4MGM3Njc~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=FfX71BKX88sE26lTmxgpDDsrB~TIv2EBtAGbXsouw5pkuqNwkT0TWG3P7Z0AXNRv56DFuKBNj9ry0bMstQ~zaO6BjjQVctEX~zUxDWQEte2fKn8mE4oQbA0cipIj9MQ9pcf8o3D1KwsKSnzhKwVsGThQ3jpMNRfaAU2AndvLcxgCt7097BSgZ32uIGSx3HngBrGbwK8s-ehO1tBEeA8m4HzvSvf5C5R6vGDup1jq-LYQiftj4M-4Ld--SsddPzr3Ngkyp4db6LjQBvPzTVnqtAvmB1tjvHnGK2k0749fNEEUnp5jJBiIoNgIqrE0So-6B9fwNWMhY5fNy3~UNe2XMw__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 989820849
+2024-06-19 12:23:51,185 - DEBUG - Attempting to release lock 281471958825536 on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767.lock
+2024-06-19 12:23:51,191 - DEBUG - Lock 281471958825536 released on /root/.cache/huggingface/hub/.locks/models--Salesforce--blip-image-captioning-base/d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767.lock
+2024-06-19 12:23:51,204 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:23:51,549 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:23:52,996 - DEBUG - Resetting dropped connection: huggingface.co
+2024-06-19 12:23:53,798 - DEBUG - https://huggingface.co:443 "HEAD /Salesforce/blip-image-captioning-base/resolve/main/generation_config.json HTTP/11" 404 0
+2024-06-19 12:23:53,856 - INFO - Model loaded successfully
+2024-06-19 12:23:53,857 - INFO - Starting to infer the image...
+2024-06-19 12:23:56,141 - INFO - a photography of the cricket match between the two teams
+2024-06-19 12:23:58,469 - INFO - a group of men playing a game of cricket
+2024-06-19 12:23:58,470 - INFO - Image inferred succesfully
+2024-06-19 12:24:00,654 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:24:00,655 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:24:00,655 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 12:24:00,655 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:24:00,655 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 12:24:00,656 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 12:24:00,656 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:24:00,656 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:24:00,657 - DEBUG - Calling on_part_data with data[130:45864]
+2024-06-19 12:24:00,658 - DEBUG - Calling on_part_data with data[0:56592]
+2024-06-19 12:24:00,658 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:24:00,658 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:24:00,658 - DEBUG - Calling on_header_value with data[44:100]
+2024-06-19 12:24:00,658 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:24:00,658 - DEBUG - Calling on_header_field with data[102:114]
+2024-06-19 12:24:00,659 - DEBUG - Calling on_header_value with data[116:126]
+2024-06-19 12:24:00,659 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:24:00,659 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:24:00,659 - DEBUG - Calling on_part_data with data[130:45736]
+2024-06-19 12:24:00,659 - DEBUG - Calling on_part_data with data[0:18151]
+2024-06-19 12:24:00,659 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:24:00,659 - DEBUG - Calling on_end with no data
+2024-06-19 12:24:00,665 - DEBUG - Calling on_part_data with data[0:29744]
+2024-06-19 12:24:00,666 - DEBUG - Calling on_part_data with data[0:45127]
+2024-06-19 12:24:00,666 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:24:00,666 - DEBUG - Calling on_end with no data
+2024-06-19 12:49:40,773 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:49:40,777 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:49:40,777 - DEBUG - Calling on_header_value with data[44:95]
+2024-06-19 12:49:40,778 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:49:40,778 - DEBUG - Calling on_header_field with data[97:109]
+2024-06-19 12:49:40,778 - DEBUG - Calling on_header_value with data[111:121]
+2024-06-19 12:49:40,778 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:49:40,779 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:49:40,779 - DEBUG - Calling on_part_data with data[125:36902]
+2024-06-19 12:49:40,779 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:49:40,780 - DEBUG - Calling on_part_data with data[36903:44160]
+2024-06-19 12:49:40,783 - DEBUG - Calling on_part_data with data[0:3229]
+2024-06-19 12:49:40,783 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:49:40,784 - DEBUG - Calling on_part_data with data[3230:25990]
+2024-06-19 12:49:40,784 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:49:40,785 - DEBUG - Calling on_part_data with data[25991:129096]
+2024-06-19 12:49:40,786 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:49:40,786 - DEBUG - Calling on_end with no data
+2024-06-19 12:49:40,818 - INFO - Starting to process the image...
+2024-06-19 12:49:40,833 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:49:41,159 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 12:49:41,170 - DEBUG - Attempting to acquire lock 281472743056560 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/b454cd05f17438fae28f9f201e2b4f7ef7fc5dda.lock
+2024-06-19 12:49:41,171 - DEBUG - Lock 281472743056560 acquired on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/b454cd05f17438fae28f9f201e2b4f7ef7fc5dda.lock
+2024-06-19 12:49:41,482 - DEBUG - https://huggingface.co:443 "GET /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 272
+2024-06-19 12:49:41,498 - DEBUG - Attempting to release lock 281472743056560 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/b454cd05f17438fae28f9f201e2b4f7ef7fc5dda.lock
+2024-06-19 12:49:41,499 - DEBUG - Lock 281472743056560 released on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/b454cd05f17438fae28f9f201e2b4f7ef7fc5dda.lock
+2024-06-19 12:49:41,578 - INFO - Processed the image
+2024-06-19 12:49:41,578 - INFO - Starting to load the model...
+2024-06-19 12:49:41,892 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:49:41,896 - DEBUG - Attempting to acquire lock 281472735837456 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/e7341ae7a800a10be4e67967c20543fb4b80d846.lock
+2024-06-19 12:49:41,897 - DEBUG - Lock 281472735837456 acquired on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/e7341ae7a800a10be4e67967c20543fb4b80d846.lock
+2024-06-19 12:49:42,136 - DEBUG - https://huggingface.co:443 "GET /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 70043
+2024-06-19 12:49:42,344 - DEBUG - Attempting to release lock 281472735837456 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/e7341ae7a800a10be4e67967c20543fb4b80d846.lock
+2024-06-19 12:49:42,345 - DEBUG - Lock 281472735837456 released on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/e7341ae7a800a10be4e67967c20543fb4b80d846.lock
+2024-06-19 12:49:42,607 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:49:42,865 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:49:43,105 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors.index.json HTTP/11" 404 0
+2024-06-19 12:49:43,356 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/pytorch_model.bin HTTP/11" 302 0
+2024-06-19 12:49:43,360 - DEBUG - Attempting to acquire lock 281472736123392 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc.lock
+2024-06-19 12:49:43,361 - DEBUG - Lock 281472736123392 acquired on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc.lock
+2024-06-19 12:49:43,366 - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2024-06-19 12:49:43,494 - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /nvidia/mit-b0/4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1719060583&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxOTA2MDU4M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9udmlkaWEvbWl0LWIwLzRhZjgzNDhjMmE4MDJiZjc2MTE1ZDM0Nzk3ZmY1Y2UxZDlmMTEwYmI4NTkzYzIyZDliNjZkOGJkN2ZhMjI3ZmM~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=YM~zE1BL7hrVAdX7AX3zBJR43uv5xvEi8lzXDXiQZ-x-1AQA1RhrDeh8E9v2PHDZWgtmSnoZyYBxUUevy5UKCLXKumdfsbnaAdAdyuqbMY9M5ZRKv6Ndfe7aGuq31JwM5postDRwWsRIet4IVkC8XhQnO2tdPPQIiKVuFAivnto1xmTaR-0Kif4poxHtFYyi73yhsU10HzDP4Ir6Wm6IFawu4HjxB22PLvqCyCfsNrPwj3JAyEP3~A6DCo~sOeiPxxjSp4K9JsgVjZNoU827StLF8nugpOqW9~5iD6qWXCBUwbg-2smizm9yI~vsuRZkxq~70iS4-n4CgLx2LNC~hw__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 14380029
+2024-06-19 12:49:47,123 - DEBUG - Attempting to release lock 281472736123392 on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc.lock
+2024-06-19 12:49:47,125 - DEBUG - Lock 281472736123392 released on /root/.cache/huggingface/hub/.locks/models--nvidia--mit-b0/4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc.lock
+2024-06-19 12:49:47,136 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:49:47,934 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:49:48,028 - INFO - Model loaded successfully
+2024-06-19 12:49:48,029 - INFO - Starting to infer the image...
+2024-06-19 12:49:48,431 - INFO - Image inferred succesfully
+2024-06-19 12:53:28,626 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:53:28,627 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:53:28,628 - DEBUG - Calling on_header_value with data[44:95]
+2024-06-19 12:53:28,628 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:53:28,628 - DEBUG - Calling on_header_field with data[97:109]
+2024-06-19 12:53:28,629 - DEBUG - Calling on_header_value with data[111:121]
+2024-06-19 12:53:28,629 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:53:28,629 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:53:28,630 - DEBUG - Calling on_part_data with data[125:36902]
+2024-06-19 12:53:28,631 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:53:28,631 - DEBUG - Calling on_part_data with data[36903:45608]
+2024-06-19 12:53:28,634 - DEBUG - Calling on_part_data with data[0:127648]
+2024-06-19 12:53:28,634 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:53:28,634 - DEBUG - Calling on_end with no data
+2024-06-19 12:53:28,635 - INFO - Starting to process the image...
+2024-06-19 12:53:28,640 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:53:28,979 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 12:53:29,038 - INFO - Processed the image
+2024-06-19 12:53:29,038 - INFO - Starting to load the model...
+2024-06-19 12:53:29,335 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:53:29,603 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:53:29,619 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:53:29,929 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:53:30,009 - INFO - Model loaded successfully
+2024-06-19 12:53:30,009 - INFO - Starting to infer the image...
+2024-06-19 12:53:30,299 - INFO - Image inferred succesfully
+2024-06-19 12:57:49,237 - DEBUG - Calling on_part_begin with no data
+2024-06-19 12:57:49,242 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 12:57:49,242 - DEBUG - Calling on_header_value with data[44:99]
+2024-06-19 12:57:49,242 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:57:49,242 - DEBUG - Calling on_header_field with data[101:113]
+2024-06-19 12:57:49,242 - DEBUG - Calling on_header_value with data[115:125]
+2024-06-19 12:57:49,243 - DEBUG - Calling on_header_end with no data
+2024-06-19 12:57:49,243 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 12:57:49,244 - DEBUG - Calling on_part_data with data[129:45609]
+2024-06-19 12:57:49,245 - DEBUG - Calling on_part_data with data[0:38103]
+2024-06-19 12:57:49,245 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 12:57:49,245 - DEBUG - Calling on_part_data with data[38104:38659]
+2024-06-19 12:57:49,246 - DEBUG - Calling on_part_end with no data
+2024-06-19 12:57:49,246 - DEBUG - Calling on_end with no data
+2024-06-19 12:57:49,249 - INFO - Starting to process the image...
+2024-06-19 12:57:49,259 - DEBUG - Resetting dropped connection: huggingface.co
+2024-06-19 12:57:50,044 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 12:57:50,119 - INFO - Processed the image
+2024-06-19 12:57:50,120 - INFO - Starting to load the model...
+2024-06-19 12:57:50,787 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:57:51,475 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 12:57:51,498 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 12:57:52,246 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 12:57:52,335 - INFO - Model loaded successfully
+2024-06-19 12:57:52,335 - INFO - Starting to infer the image...
+2024-06-19 12:57:52,519 - INFO - Image inferred succesfully
+2024-06-19 13:17:11,159 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:17:11,161 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:17:11,161 - DEBUG - Calling on_header_value with data[44:99]
+2024-06-19 13:17:11,162 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:17:11,163 - DEBUG - Calling on_header_field with data[101:113]
+2024-06-19 13:17:11,164 - DEBUG - Calling on_header_value with data[115:125]
+2024-06-19 13:17:11,166 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:17:11,166 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:17:11,167 - DEBUG - Calling on_part_data with data[129:45737]
+2024-06-19 13:17:11,167 - DEBUG - Calling on_part_data with data[0:37975]
+2024-06-19 13:17:11,168 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:17:11,168 - DEBUG - Calling on_part_data with data[37976:38531]
+2024-06-19 13:17:11,168 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:17:11,168 - DEBUG - Calling on_end with no data
+2024-06-19 13:17:11,168 - INFO - Starting to process the image...
+2024-06-19 13:17:11,171 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:17:11,955 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:17:12,042 - INFO - Processed the image
+2024-06-19 13:17:12,042 - INFO - Starting to load the model...
+2024-06-19 13:17:12,294 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:17:12,555 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:17:12,573 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:17:12,961 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:17:13,051 - INFO - Model loaded successfully
+2024-06-19 13:17:13,052 - INFO - Starting to infer the image...
+2024-06-19 13:17:13,355 - INFO - Image inferred succesfully
+2024-06-19 13:17:13,847 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:17:13,848 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:17:13,848 - DEBUG - Calling on_header_value with data[44:99]
+2024-06-19 13:17:13,849 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:17:13,849 - DEBUG - Calling on_header_field with data[101:113]
+2024-06-19 13:17:13,849 - DEBUG - Calling on_header_value with data[115:125]
+2024-06-19 13:17:13,849 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:17:13,850 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:17:13,851 - DEBUG - Calling on_part_data with data[129:7049]
+2024-06-19 13:17:13,853 - DEBUG - Calling on_part_data with data[0:76663]
+2024-06-19 13:17:13,854 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:17:13,854 - DEBUG - Calling on_part_data with data[76664:77219]
+2024-06-19 13:17:13,855 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:17:13,855 - DEBUG - Calling on_end with no data
+2024-06-19 13:17:13,857 - INFO - Starting to process the image...
+2024-06-19 13:17:14,151 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:17:14,195 - INFO - Processed the image
+2024-06-19 13:17:14,196 - INFO - Starting to load the model...
+2024-06-19 13:17:14,562 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:17:14,867 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:17:14,885 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:17:15,687 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:17:15,758 - INFO - Model loaded successfully
+2024-06-19 13:17:15,758 - INFO - Starting to infer the image...
+2024-06-19 13:17:15,895 - INFO - Image inferred succesfully
+2024-06-19 13:27:15,792 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:27:15,793 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:27:15,794 - DEBUG - Calling on_header_value with data[44:99]
+2024-06-19 13:27:15,794 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:27:15,795 - DEBUG - Calling on_header_field with data[101:113]
+2024-06-19 13:27:15,795 - DEBUG - Calling on_header_value with data[115:125]
+2024-06-19 13:27:15,796 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:27:15,796 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:27:15,796 - DEBUG - Calling on_part_data with data[129:14289]
+2024-06-19 13:27:15,798 - DEBUG - Calling on_part_data with data[0:44352]
+2024-06-19 13:27:15,799 - DEBUG - Calling on_part_data with data[0:25071]
+2024-06-19 13:27:15,799 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:27:15,800 - DEBUG - Calling on_part_data with data[25072:25627]
+2024-06-19 13:27:15,800 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:27:15,801 - DEBUG - Calling on_end with no data
+2024-06-19 13:27:15,802 - INFO - Starting to process the image...
+2024-06-19 13:27:15,807 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:27:16,537 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:27:16,648 - INFO - Processed the image
+2024-06-19 13:27:16,648 - INFO - Starting to load the model...
+2024-06-19 13:27:17,014 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:27:17,667 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:27:17,685 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:27:17,978 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:27:18,056 - INFO - Model loaded successfully
+2024-06-19 13:27:18,056 - INFO - Starting to infer the image...
+2024-06-19 13:27:18,326 - INFO - Image inferred succesfully
+2024-06-19 13:30:43,698 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:30:43,701 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:30:43,701 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:30:43,703 - DEBUG - Calling on_part_data with data[123:45608]
+2024-06-19 13:30:43,705 - DEBUG - Calling on_part_data with data[0:78568]
+2024-06-19 13:30:43,707 - DEBUG - Calling on_part_data with data[0:59744]
+2024-06-19 13:30:43,713 - DEBUG - Calling on_part_data with data[0:74989]
+2024-06-19 13:30:43,713 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:30:43,713 - DEBUG - Calling on_end with no data
+2024-06-19 13:30:43,719 - INFO - Starting to process the image...
+2024-06-19 13:30:43,727 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:30:44,474 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:30:44,526 - DEBUG - Importing BlpImagePlugin
+2024-06-19 13:30:44,528 - DEBUG - Importing BmpImagePlugin
+2024-06-19 13:30:44,529 - DEBUG - Importing BufrStubImagePlugin
+2024-06-19 13:30:44,529 - DEBUG - Importing CurImagePlugin
+2024-06-19 13:30:44,530 - DEBUG - Importing DcxImagePlugin
+2024-06-19 13:30:44,532 - DEBUG - Importing DdsImagePlugin
+2024-06-19 13:30:44,535 - DEBUG - Importing EpsImagePlugin
+2024-06-19 13:30:44,536 - DEBUG - Importing FitsImagePlugin
+2024-06-19 13:30:44,537 - DEBUG - Importing FliImagePlugin
+2024-06-19 13:30:44,538 - DEBUG - Importing FpxImagePlugin
+2024-06-19 13:30:44,539 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-19 13:30:44,539 - DEBUG - Importing FtexImagePlugin
+2024-06-19 13:30:44,540 - DEBUG - Importing GbrImagePlugin
+2024-06-19 13:30:44,541 - DEBUG - Importing GifImagePlugin
+2024-06-19 13:30:44,541 - DEBUG - Importing GribStubImagePlugin
+2024-06-19 13:30:44,542 - DEBUG - Importing Hdf5StubImagePlugin
+2024-06-19 13:30:44,543 - DEBUG - Importing IcnsImagePlugin
+2024-06-19 13:30:44,545 - DEBUG - Importing IcoImagePlugin
+2024-06-19 13:30:44,546 - DEBUG - Importing ImImagePlugin
+2024-06-19 13:30:44,547 - DEBUG - Importing ImtImagePlugin
+2024-06-19 13:30:44,548 - DEBUG - Importing IptcImagePlugin
+2024-06-19 13:30:44,549 - DEBUG - Importing JpegImagePlugin
+2024-06-19 13:30:44,549 - DEBUG - Importing Jpeg2KImagePlugin
+2024-06-19 13:30:44,549 - DEBUG - Importing McIdasImagePlugin
+2024-06-19 13:30:44,549 - DEBUG - Importing MicImagePlugin
+2024-06-19 13:30:44,550 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-19 13:30:44,550 - DEBUG - Importing MpegImagePlugin
+2024-06-19 13:30:44,551 - DEBUG - Importing MpoImagePlugin
+2024-06-19 13:30:44,555 - DEBUG - Importing MspImagePlugin
+2024-06-19 13:30:44,556 - DEBUG - Importing PalmImagePlugin
+2024-06-19 13:30:44,557 - DEBUG - Importing PcdImagePlugin
+2024-06-19 13:30:44,558 - DEBUG - Importing PcxImagePlugin
+2024-06-19 13:30:44,558 - DEBUG - Importing PdfImagePlugin
+2024-06-19 13:30:44,571 - DEBUG - Importing PixarImagePlugin
+2024-06-19 13:30:44,572 - DEBUG - Importing PngImagePlugin
+2024-06-19 13:30:44,572 - DEBUG - Importing PpmImagePlugin
+2024-06-19 13:30:44,572 - DEBUG - Importing PsdImagePlugin
+2024-06-19 13:30:44,574 - DEBUG - Importing QoiImagePlugin
+2024-06-19 13:30:44,575 - DEBUG - Importing SgiImagePlugin
+2024-06-19 13:30:44,576 - DEBUG - Importing SpiderImagePlugin
+2024-06-19 13:30:44,577 - DEBUG - Importing SunImagePlugin
+2024-06-19 13:30:44,578 - DEBUG - Importing TgaImagePlugin
+2024-06-19 13:30:44,579 - DEBUG - Importing TiffImagePlugin
+2024-06-19 13:30:44,579 - DEBUG - Importing WebPImagePlugin
+2024-06-19 13:30:44,588 - DEBUG - Importing WmfImagePlugin
+2024-06-19 13:30:44,588 - DEBUG - Importing XbmImagePlugin
+2024-06-19 13:30:44,589 - DEBUG - Importing XpmImagePlugin
+2024-06-19 13:30:44,589 - DEBUG - Importing XVThumbImagePlugin
+2024-06-19 13:30:44,644 - INFO - Processed the image
+2024-06-19 13:30:44,644 - INFO - Starting to load the model...
+2024-06-19 13:30:45,402 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:30:45,747 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:30:45,767 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:30:46,054 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:30:46,130 - INFO - Model loaded successfully
+2024-06-19 13:30:46,130 - INFO - Starting to infer the image...
+2024-06-19 13:30:46,356 - INFO - Image inferred succesfully
+2024-06-19 13:31:45,448 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:31:45,450 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:31:45,450 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:31:45,450 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:31:45,450 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:31:45,451 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:31:45,451 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:31:45,451 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:31:45,452 - DEBUG - Calling on_part_data with data[123:44160]
+2024-06-19 13:31:45,455 - DEBUG - Calling on_part_data with data[0:166736]
+2024-06-19 13:31:45,456 - DEBUG - Calling on_part_data with data[0:26142]
+2024-06-19 13:31:45,456 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:31:45,456 - DEBUG - Calling on_part_data with data[26143:48013]
+2024-06-19 13:31:45,457 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:31:45,457 - DEBUG - Calling on_end with no data
+2024-06-19 13:31:45,458 - INFO - Starting to process the image...
+2024-06-19 13:31:45,462 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:31:45,834 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:31:45,856 - DEBUG - Importing BlpImagePlugin
+2024-06-19 13:31:45,859 - DEBUG - Importing BmpImagePlugin
+2024-06-19 13:31:45,859 - DEBUG - Importing BufrStubImagePlugin
+2024-06-19 13:31:45,859 - DEBUG - Importing CurImagePlugin
+2024-06-19 13:31:45,860 - DEBUG - Importing DcxImagePlugin
+2024-06-19 13:31:45,861 - DEBUG - Importing DdsImagePlugin
+2024-06-19 13:31:45,866 - DEBUG - Importing EpsImagePlugin
+2024-06-19 13:31:45,868 - DEBUG - Importing FitsImagePlugin
+2024-06-19 13:31:45,868 - DEBUG - Importing FliImagePlugin
+2024-06-19 13:31:45,869 - DEBUG - Importing FpxImagePlugin
+2024-06-19 13:31:45,870 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-19 13:31:45,870 - DEBUG - Importing FtexImagePlugin
+2024-06-19 13:31:45,871 - DEBUG - Importing GbrImagePlugin
+2024-06-19 13:31:45,871 - DEBUG - Importing GifImagePlugin
+2024-06-19 13:31:45,871 - DEBUG - Importing GribStubImagePlugin
+2024-06-19 13:31:45,872 - DEBUG - Importing Hdf5StubImagePlugin
+2024-06-19 13:31:45,872 - DEBUG - Importing IcnsImagePlugin
+2024-06-19 13:31:45,874 - DEBUG - Importing IcoImagePlugin
+2024-06-19 13:31:45,875 - DEBUG - Importing ImImagePlugin
+2024-06-19 13:31:45,876 - DEBUG - Importing ImtImagePlugin
+2024-06-19 13:31:45,876 - DEBUG - Importing IptcImagePlugin
+2024-06-19 13:31:45,876 - DEBUG - Importing JpegImagePlugin
+2024-06-19 13:31:45,877 - DEBUG - Importing Jpeg2KImagePlugin
+2024-06-19 13:31:45,877 - DEBUG - Importing McIdasImagePlugin
+2024-06-19 13:31:45,877 - DEBUG - Importing MicImagePlugin
+2024-06-19 13:31:45,878 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-19 13:31:45,878 - DEBUG - Importing MpegImagePlugin
+2024-06-19 13:31:45,878 - DEBUG - Importing MpoImagePlugin
+2024-06-19 13:31:45,881 - DEBUG - Importing MspImagePlugin
+2024-06-19 13:31:45,881 - DEBUG - Importing PalmImagePlugin
+2024-06-19 13:31:45,882 - DEBUG - Importing PcdImagePlugin
+2024-06-19 13:31:45,883 - DEBUG - Importing PcxImagePlugin
+2024-06-19 13:31:45,883 - DEBUG - Importing PdfImagePlugin
+2024-06-19 13:31:45,888 - DEBUG - Importing PixarImagePlugin
+2024-06-19 13:31:45,888 - DEBUG - Importing PngImagePlugin
+2024-06-19 13:31:45,888 - DEBUG - Importing PpmImagePlugin
+2024-06-19 13:31:45,888 - DEBUG - Importing PsdImagePlugin
+2024-06-19 13:31:45,889 - DEBUG - Importing QoiImagePlugin
+2024-06-19 13:31:45,889 - DEBUG - Importing SgiImagePlugin
+2024-06-19 13:31:45,889 - DEBUG - Importing SpiderImagePlugin
+2024-06-19 13:31:45,890 - DEBUG - Importing SunImagePlugin
+2024-06-19 13:31:45,890 - DEBUG - Importing TgaImagePlugin
+2024-06-19 13:31:45,890 - DEBUG - Importing TiffImagePlugin
+2024-06-19 13:31:45,891 - DEBUG - Importing WebPImagePlugin
+2024-06-19 13:31:45,892 - DEBUG - Importing WmfImagePlugin
+2024-06-19 13:31:45,893 - DEBUG - Importing XbmImagePlugin
+2024-06-19 13:31:45,893 - DEBUG - Importing XpmImagePlugin
+2024-06-19 13:31:45,894 - DEBUG - Importing XVThumbImagePlugin
+2024-06-19 13:31:45,963 - INFO - Processed the image
+2024-06-19 13:31:45,963 - INFO - Starting to load the model...
+2024-06-19 13:31:46,229 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:31:46,491 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:31:46,511 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:31:47,353 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:31:47,433 - INFO - Model loaded successfully
+2024-06-19 13:31:47,434 - INFO - Starting to infer the image...
+2024-06-19 13:31:47,625 - INFO - Image inferred succesfully
+2024-06-19 13:32:05,672 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:32:05,673 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:32:05,674 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:32:05,674 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:32:05,674 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:32:05,674 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:32:05,675 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:32:05,675 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:32:05,676 - DEBUG - Calling on_part_data with data[123:45608]
+2024-06-19 13:32:05,679 - DEBUG - Calling on_part_data with data[0:99752]
+2024-06-19 13:32:05,681 - DEBUG - Calling on_part_data with data[0:113549]
+2024-06-19 13:32:05,681 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:32:05,681 - DEBUG - Calling on_end with no data
+2024-06-19 13:32:05,682 - INFO - Starting to process the image...
+2024-06-19 13:32:05,687 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:32:06,503 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:32:06,529 - DEBUG - Importing BlpImagePlugin
+2024-06-19 13:32:06,531 - DEBUG - Importing BmpImagePlugin
+2024-06-19 13:32:06,532 - DEBUG - Importing BufrStubImagePlugin
+2024-06-19 13:32:06,532 - DEBUG - Importing CurImagePlugin
+2024-06-19 13:32:06,533 - DEBUG - Importing DcxImagePlugin
+2024-06-19 13:32:06,533 - DEBUG - Importing DdsImagePlugin
+2024-06-19 13:32:06,538 - DEBUG - Importing EpsImagePlugin
+2024-06-19 13:32:06,539 - DEBUG - Importing FitsImagePlugin
+2024-06-19 13:32:06,540 - DEBUG - Importing FliImagePlugin
+2024-06-19 13:32:06,540 - DEBUG - Importing FpxImagePlugin
+2024-06-19 13:32:06,541 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-19 13:32:06,541 - DEBUG - Importing FtexImagePlugin
+2024-06-19 13:32:06,542 - DEBUG - Importing GbrImagePlugin
+2024-06-19 13:32:06,542 - DEBUG - Importing GifImagePlugin
+2024-06-19 13:32:06,542 - DEBUG - Importing GribStubImagePlugin
+2024-06-19 13:32:06,543 - DEBUG - Importing Hdf5StubImagePlugin
+2024-06-19 13:32:06,543 - DEBUG - Importing IcnsImagePlugin
+2024-06-19 13:32:06,545 - DEBUG - Importing IcoImagePlugin
+2024-06-19 13:32:06,545 - DEBUG - Importing ImImagePlugin
+2024-06-19 13:32:06,546 - DEBUG - Importing ImtImagePlugin
+2024-06-19 13:32:06,547 - DEBUG - Importing IptcImagePlugin
+2024-06-19 13:32:06,547 - DEBUG - Importing JpegImagePlugin
+2024-06-19 13:32:06,547 - DEBUG - Importing Jpeg2KImagePlugin
+2024-06-19 13:32:06,547 - DEBUG - Importing McIdasImagePlugin
+2024-06-19 13:32:06,548 - DEBUG - Importing MicImagePlugin
+2024-06-19 13:32:06,548 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-19 13:32:06,548 - DEBUG - Importing MpegImagePlugin
+2024-06-19 13:32:06,549 - DEBUG - Importing MpoImagePlugin
+2024-06-19 13:32:06,552 - DEBUG - Importing MspImagePlugin
+2024-06-19 13:32:06,552 - DEBUG - Importing PalmImagePlugin
+2024-06-19 13:32:06,553 - DEBUG - Importing PcdImagePlugin
+2024-06-19 13:32:06,553 - DEBUG - Importing PcxImagePlugin
+2024-06-19 13:32:06,554 - DEBUG - Importing PdfImagePlugin
+2024-06-19 13:32:06,559 - DEBUG - Importing PixarImagePlugin
+2024-06-19 13:32:06,559 - DEBUG - Importing PngImagePlugin
+2024-06-19 13:32:06,559 - DEBUG - Importing PpmImagePlugin
+2024-06-19 13:32:06,559 - DEBUG - Importing PsdImagePlugin
+2024-06-19 13:32:06,559 - DEBUG - Importing QoiImagePlugin
+2024-06-19 13:32:06,560 - DEBUG - Importing SgiImagePlugin
+2024-06-19 13:32:06,560 - DEBUG - Importing SpiderImagePlugin
+2024-06-19 13:32:06,561 - DEBUG - Importing SunImagePlugin
+2024-06-19 13:32:06,561 - DEBUG - Importing TgaImagePlugin
+2024-06-19 13:32:06,561 - DEBUG - Importing TiffImagePlugin
+2024-06-19 13:32:06,561 - DEBUG - Importing WebPImagePlugin
+2024-06-19 13:32:06,563 - DEBUG - Importing WmfImagePlugin
+2024-06-19 13:32:06,563 - DEBUG - Importing XbmImagePlugin
+2024-06-19 13:32:06,564 - DEBUG - Importing XpmImagePlugin
+2024-06-19 13:32:06,564 - DEBUG - Importing XVThumbImagePlugin
+2024-06-19 13:32:06,639 - INFO - Processed the image
+2024-06-19 13:32:06,639 - INFO - Starting to load the model...
+2024-06-19 13:32:06,896 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:32:07,581 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:32:07,597 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:32:08,038 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:32:08,115 - INFO - Model loaded successfully
+2024-06-19 13:32:08,115 - INFO - Starting to infer the image...
+2024-06-19 13:32:08,328 - INFO - Image inferred succesfully
+2024-06-19 13:32:36,036 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:32:36,036 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:32:36,037 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:32:36,037 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:32:36,037 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:32:36,038 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:32:36,039 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:32:36,039 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:32:36,040 - DEBUG - Calling on_part_data with data[123:14288]
+2024-06-19 13:32:36,042 - DEBUG - Calling on_part_data with data[0:44352]
+2024-06-19 13:32:36,044 - DEBUG - Calling on_part_data with data[0:65536]
+2024-06-19 13:32:36,046 - DEBUG - Calling on_part_data with data[0:134733]
+2024-06-19 13:32:36,047 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:32:36,047 - DEBUG - Calling on_end with no data
+2024-06-19 13:32:36,048 - INFO - Starting to process the image...
+2024-06-19 13:32:36,051 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:32:36,356 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:32:36,379 - DEBUG - Importing BlpImagePlugin
+2024-06-19 13:32:36,381 - DEBUG - Importing BmpImagePlugin
+2024-06-19 13:32:36,381 - DEBUG - Importing BufrStubImagePlugin
+2024-06-19 13:32:36,382 - DEBUG - Importing CurImagePlugin
+2024-06-19 13:32:36,382 - DEBUG - Importing DcxImagePlugin
+2024-06-19 13:32:36,383 - DEBUG - Importing DdsImagePlugin
+2024-06-19 13:32:36,388 - DEBUG - Importing EpsImagePlugin
+2024-06-19 13:32:36,389 - DEBUG - Importing FitsImagePlugin
+2024-06-19 13:32:36,390 - DEBUG - Importing FliImagePlugin
+2024-06-19 13:32:36,390 - DEBUG - Importing FpxImagePlugin
+2024-06-19 13:32:36,391 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-19 13:32:36,391 - DEBUG - Importing FtexImagePlugin
+2024-06-19 13:32:36,392 - DEBUG - Importing GbrImagePlugin
+2024-06-19 13:32:36,392 - DEBUG - Importing GifImagePlugin
+2024-06-19 13:32:36,392 - DEBUG - Importing GribStubImagePlugin
+2024-06-19 13:32:36,393 - DEBUG - Importing Hdf5StubImagePlugin
+2024-06-19 13:32:36,393 - DEBUG - Importing IcnsImagePlugin
+2024-06-19 13:32:36,395 - DEBUG - Importing IcoImagePlugin
+2024-06-19 13:32:36,395 - DEBUG - Importing ImImagePlugin
+2024-06-19 13:32:36,396 - DEBUG - Importing ImtImagePlugin
+2024-06-19 13:32:36,397 - DEBUG - Importing IptcImagePlugin
+2024-06-19 13:32:36,397 - DEBUG - Importing JpegImagePlugin
+2024-06-19 13:32:36,398 - DEBUG - Importing Jpeg2KImagePlugin
+2024-06-19 13:32:36,398 - DEBUG - Importing McIdasImagePlugin
+2024-06-19 13:32:36,398 - DEBUG - Importing MicImagePlugin
+2024-06-19 13:32:36,399 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-19 13:32:36,399 - DEBUG - Importing MpegImagePlugin
+2024-06-19 13:32:36,399 - DEBUG - Importing MpoImagePlugin
+2024-06-19 13:32:36,402 - DEBUG - Importing MspImagePlugin
+2024-06-19 13:32:36,403 - DEBUG - Importing PalmImagePlugin
+2024-06-19 13:32:36,404 - DEBUG - Importing PcdImagePlugin
+2024-06-19 13:32:36,404 - DEBUG - Importing PcxImagePlugin
+2024-06-19 13:32:36,404 - DEBUG - Importing PdfImagePlugin
+2024-06-19 13:32:36,409 - DEBUG - Importing PixarImagePlugin
+2024-06-19 13:32:36,409 - DEBUG - Importing PngImagePlugin
+2024-06-19 13:32:36,409 - DEBUG - Importing PpmImagePlugin
+2024-06-19 13:32:36,409 - DEBUG - Importing PsdImagePlugin
+2024-06-19 13:32:36,410 - DEBUG - Importing QoiImagePlugin
+2024-06-19 13:32:36,410 - DEBUG - Importing SgiImagePlugin
+2024-06-19 13:32:36,411 - DEBUG - Importing SpiderImagePlugin
+2024-06-19 13:32:36,411 - DEBUG - Importing SunImagePlugin
+2024-06-19 13:32:36,411 - DEBUG - Importing TgaImagePlugin
+2024-06-19 13:32:36,412 - DEBUG - Importing TiffImagePlugin
+2024-06-19 13:32:36,412 - DEBUG - Importing WebPImagePlugin
+2024-06-19 13:32:36,413 - DEBUG - Importing WmfImagePlugin
+2024-06-19 13:32:36,414 - DEBUG - Importing XbmImagePlugin
+2024-06-19 13:32:36,414 - DEBUG - Importing XpmImagePlugin
+2024-06-19 13:32:36,415 - DEBUG - Importing XVThumbImagePlugin
+2024-06-19 13:32:36,473 - INFO - Processed the image
+2024-06-19 13:32:36,474 - INFO - Starting to load the model...
+2024-06-19 13:32:37,223 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:32:37,467 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:32:37,482 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:32:38,176 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:32:38,246 - INFO - Model loaded successfully
+2024-06-19 13:32:38,247 - INFO - Starting to infer the image...
+2024-06-19 13:32:38,527 - INFO - Image inferred succesfully
+2024-06-19 13:33:00,493 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:33:00,494 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:33:00,494 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:33:00,494 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:33:00,494 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:33:00,495 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:33:00,495 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:33:00,495 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:33:00,495 - DEBUG - Calling on_part_data with data[123:45440]
+2024-06-19 13:33:00,496 - DEBUG - Calling on_part_data with data[0:68600]
+2024-06-19 13:33:00,496 - DEBUG - Calling on_part_data with data[0:86720]
+2024-06-19 13:33:00,497 - DEBUG - Calling on_part_data with data[0:36278]
+2024-06-19 13:33:00,497 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:33:00,497 - DEBUG - Calling on_part_data with data[36279:58149]
+2024-06-19 13:33:00,497 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:33:00,498 - DEBUG - Calling on_end with no data
+2024-06-19 13:33:00,498 - INFO - Starting to process the image...
+2024-06-19 13:33:00,499 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:33:00,843 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:33:00,866 - DEBUG - Importing BlpImagePlugin
+2024-06-19 13:33:00,868 - DEBUG - Importing BmpImagePlugin
+2024-06-19 13:33:00,868 - DEBUG - Importing BufrStubImagePlugin
+2024-06-19 13:33:00,869 - DEBUG - Importing CurImagePlugin
+2024-06-19 13:33:00,869 - DEBUG - Importing DcxImagePlugin
+2024-06-19 13:33:00,870 - DEBUG - Importing DdsImagePlugin
+2024-06-19 13:33:00,875 - DEBUG - Importing EpsImagePlugin
+2024-06-19 13:33:00,875 - DEBUG - Importing FitsImagePlugin
+2024-06-19 13:33:00,876 - DEBUG - Importing FliImagePlugin
+2024-06-19 13:33:00,876 - DEBUG - Importing FpxImagePlugin
+2024-06-19 13:33:00,877 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-19 13:33:00,877 - DEBUG - Importing FtexImagePlugin
+2024-06-19 13:33:00,878 - DEBUG - Importing GbrImagePlugin
+2024-06-19 13:33:00,878 - DEBUG - Importing GifImagePlugin
+2024-06-19 13:33:00,878 - DEBUG - Importing GribStubImagePlugin
+2024-06-19 13:33:00,879 - DEBUG - Importing Hdf5StubImagePlugin
+2024-06-19 13:33:00,879 - DEBUG - Importing IcnsImagePlugin
+2024-06-19 13:33:00,881 - DEBUG - Importing IcoImagePlugin
+2024-06-19 13:33:00,881 - DEBUG - Importing ImImagePlugin
+2024-06-19 13:33:00,882 - DEBUG - Importing ImtImagePlugin
+2024-06-19 13:33:00,883 - DEBUG - Importing IptcImagePlugin
+2024-06-19 13:33:00,883 - DEBUG - Importing JpegImagePlugin
+2024-06-19 13:33:00,884 - DEBUG - Importing Jpeg2KImagePlugin
+2024-06-19 13:33:00,884 - DEBUG - Importing McIdasImagePlugin
+2024-06-19 13:33:00,884 - DEBUG - Importing MicImagePlugin
+2024-06-19 13:33:00,885 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-19 13:33:00,885 - DEBUG - Importing MpegImagePlugin
+2024-06-19 13:33:00,885 - DEBUG - Importing MpoImagePlugin
+2024-06-19 13:33:00,888 - DEBUG - Importing MspImagePlugin
+2024-06-19 13:33:00,889 - DEBUG - Importing PalmImagePlugin
+2024-06-19 13:33:00,889 - DEBUG - Importing PcdImagePlugin
+2024-06-19 13:33:00,890 - DEBUG - Importing PcxImagePlugin
+2024-06-19 13:33:00,890 - DEBUG - Importing PdfImagePlugin
+2024-06-19 13:33:00,895 - DEBUG - Importing PixarImagePlugin
+2024-06-19 13:33:00,895 - DEBUG - Importing PngImagePlugin
+2024-06-19 13:33:00,895 - DEBUG - Importing PpmImagePlugin
+2024-06-19 13:33:00,895 - DEBUG - Importing PsdImagePlugin
+2024-06-19 13:33:00,896 - DEBUG - Importing QoiImagePlugin
+2024-06-19 13:33:00,896 - DEBUG - Importing SgiImagePlugin
+2024-06-19 13:33:00,897 - DEBUG - Importing SpiderImagePlugin
+2024-06-19 13:33:00,897 - DEBUG - Importing SunImagePlugin
+2024-06-19 13:33:00,897 - DEBUG - Importing TgaImagePlugin
+2024-06-19 13:33:00,898 - DEBUG - Importing TiffImagePlugin
+2024-06-19 13:33:00,898 - DEBUG - Importing WebPImagePlugin
+2024-06-19 13:33:00,899 - DEBUG - Importing WmfImagePlugin
+2024-06-19 13:33:00,900 - DEBUG - Importing XbmImagePlugin
+2024-06-19 13:33:00,900 - DEBUG - Importing XpmImagePlugin
+2024-06-19 13:33:00,901 - DEBUG - Importing XVThumbImagePlugin
+2024-06-19 13:33:00,960 - INFO - Processed the image
+2024-06-19 13:33:00,961 - INFO - Starting to load the model...
+2024-06-19 13:33:01,217 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:33:01,477 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:33:01,494 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:33:02,322 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:33:02,396 - INFO - Model loaded successfully
+2024-06-19 13:33:02,396 - INFO - Starting to infer the image...
+2024-06-19 13:33:02,594 - INFO - Image inferred succesfully
+2024-06-19 13:34:03,775 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:34:03,781 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:34:03,781 - DEBUG - Calling on_header_value with data[44:93]
+2024-06-19 13:34:03,781 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:34:03,782 - DEBUG - Calling on_header_field with data[95:107]
+2024-06-19 13:34:03,782 - DEBUG - Calling on_header_value with data[109:119]
+2024-06-19 13:34:03,782 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:34:03,782 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:34:03,783 - DEBUG - Calling on_part_data with data[123:14288]
+2024-06-19 13:34:03,785 - DEBUG - Calling on_part_data with data[0:44352]
+2024-06-19 13:34:03,787 - DEBUG - Calling on_part_data with data[0:31320]
+2024-06-19 13:34:03,789 - DEBUG - Calling on_part_data with data[0:92512]
+2024-06-19 13:34:03,790 - DEBUG - Calling on_part_data with data[0:76437]
+2024-06-19 13:34:03,790 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:34:03,790 - DEBUG - Calling on_end with no data
+2024-06-19 13:34:03,792 - INFO - Starting to process the image...
+2024-06-19 13:34:04,473 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:34:04,598 - INFO - Processed the image
+2024-06-19 13:34:04,600 - INFO - Starting to load the model...
+2024-06-19 13:34:05,261 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:34:05,510 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:34:05,525 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:34:06,417 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:34:06,503 - INFO - Model loaded successfully
+2024-06-19 13:34:06,503 - INFO - Starting to infer the image...
+2024-06-19 13:34:06,726 - INFO - Image inferred succesfully
+2024-06-19 13:35:11,902 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:35:11,908 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:35:11,908 - DEBUG - Calling on_header_value with data[44:98]
+2024-06-19 13:35:11,908 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:35:11,908 - DEBUG - Calling on_header_field with data[100:112]
+2024-06-19 13:35:11,909 - DEBUG - Calling on_header_value with data[114:124]
+2024-06-19 13:35:11,909 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:35:11,909 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:35:11,910 - DEBUG - Calling on_part_data with data[128:44161]
+2024-06-19 13:35:11,911 - DEBUG - Calling on_part_data with data[0:15194]
+2024-06-19 13:35:11,912 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:35:11,912 - DEBUG - Calling on_end with no data
+2024-06-19 13:35:11,914 - INFO - Starting to process the image...
+2024-06-19 13:35:12,264 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:35:12,316 - INFO - Processed the image
+2024-06-19 13:35:12,316 - INFO - Starting to load the model...
+2024-06-19 13:35:13,078 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:35:13,332 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:35:13,341 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:35:14,122 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:35:14,208 - INFO - Model loaded successfully
+2024-06-19 13:35:14,208 - INFO - Starting to infer the image...
+2024-06-19 13:35:14,715 - INFO - Image inferred succesfully
+2024-06-19 13:35:24,268 - DEBUG - Calling on_part_begin with no data
+2024-06-19 13:35:24,270 - DEBUG - Calling on_header_field with data[23:42]
+2024-06-19 13:35:24,270 - DEBUG - Calling on_header_value with data[44:94]
+2024-06-19 13:35:24,270 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:35:24,271 - DEBUG - Calling on_header_field with data[96:108]
+2024-06-19 13:35:24,271 - DEBUG - Calling on_header_value with data[110:120]
+2024-06-19 13:35:24,271 - DEBUG - Calling on_header_end with no data
+2024-06-19 13:35:24,271 - DEBUG - Calling on_headers_finished with no data
+2024-06-19 13:35:24,272 - DEBUG - Calling on_part_data with data[124:222]
+2024-06-19 13:35:24,273 - DEBUG - Calling on_part_data with data[0:1]
+2024-06-19 13:35:24,273 - DEBUG - Calling on_part_data with data[223:2879]
+2024-06-19 13:35:24,273 - DEBUG - Calling on_part_end with no data
+2024-06-19 13:35:24,274 - DEBUG - Calling on_end with no data
+2024-06-19 13:35:24,276 - INFO - Starting to process the image...
+2024-06-19 13:35:24,541 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/preprocessor_config.json HTTP/11" 200 0
+2024-06-19 13:35:24,583 - INFO - Processed the image
+2024-06-19 13:35:24,583 - INFO - Starting to load the model...
+2024-06-19 13:35:24,854 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:35:25,113 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/config.json HTTP/11" 200 0
+2024-06-19 13:35:25,134 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-06-19 13:35:25,980 - DEBUG - https://huggingface.co:443 "HEAD /nvidia/mit-b0/resolve/main/model.safetensors HTTP/11" 404 0
+2024-06-19 13:35:26,069 - INFO - Model loaded successfully
+2024-06-19 13:35:26,069 - INFO - Starting to infer the image...
+2024-06-19 13:35:26,262 - INFO - Image inferred succesfully

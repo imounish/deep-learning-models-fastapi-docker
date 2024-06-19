@@ -34,7 +34,7 @@ save_image(data["test_images"][2], "imgs/octmnist_test_image_2.jpg")
 save_image(data["test_images"][3], "imgs/octmnist_test_image_3.jpg")
 save_image(data["test_images"][4], "imgs/octmnist_test_image_4.jpg")
 
-with open("imgs/labels.txt", 'w') as f:
+with open("imgs/labels.txt", "w") as f:
     for i in range(5):
         f.write(f"octmnist_test_image_{i} - {str(data["test_labels"][i])}\n")
 
