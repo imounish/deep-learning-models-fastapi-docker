@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install fastapi uvicorn joblib numpy scikit-learn torch torchvision medmnist python-multipart pillow
+RUN pip install fastapi uvicorn joblib numpy scikit-learn torch torchvision medmnist python-multipart pillow transformers
 
 EXPOSE 8000
 
