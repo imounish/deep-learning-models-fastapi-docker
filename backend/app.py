@@ -1,12 +1,21 @@
-import os
 import logging
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from utils import load_image, predict_octmnist
+from fastapi.middleware.cors import CORSMiddleware
+from utils import load_image, load_img_classification_model, predict_img_labels
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from transformers import pipeline
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # basic logging configuration
 logging.basicConfig(
@@ -16,10 +25,10 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
-# install logger
+# Install logger
 logger = logging.getLogger(__name__)
 
-# set the model path
+# Set the model path
 model_path = "model/best_model_OCTMNIST.pth"
 
 # Initialize the summarizer pipeline
@@ -35,24 +44,19 @@ def root():
     return {"message": "Welcome to the ML Model API"}
 
 
-@app.post("/predict")
-def upload(file: UploadFile = File(...)):
+@app.post("/predict/image_classes")
+async def predict_img_caption(file: UploadFile = File(...)):
     try:
-        contents = file.file.read()
-        with open(file.filename, "wb") as f:
-            f.write(contents)
-    except Exception:
-        return {"message": "There was an error uploading the file"}
-    finally:
-        file.file.close()
+        inputs = load_image(await file.read())
 
-    image_array = load_image(file.filename)
+        model = load_img_classification_model()
 
-    prediction = predict_octmnist(image_array, model_path)
+        predicted_class_label = predict_img_labels(inputs, model)
 
-    os.remove(file.filename)
+    except Exception as exception:
+        raise HTTPException(status_code=400, detail=str(exception))
 
-    return JSONResponse(content=prediction)
+    return JSONResponse(content={"class_label": predicted_class_label})
 
 
 # def preprocess_text(text: str) -> str:

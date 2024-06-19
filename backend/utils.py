@@ -1,47 +1,26 @@
 from PIL import Image
-import numpy as np
-import torch
-import torchvision.transforms as transforms
-from model.CNN import CNN
-
-octmnist_classes = {
-    "0": "choroidal neovascularization",
-    "1": "diabetic macular edema",
-    "2": "drusen",
-    "3": "normal",
-}
+from io import BytesIO
+from typing import Tuple
+from transformers import SegformerImageProcessor, SegformerForImageClassification
 
 
-def load_image(infilename: str) -> np.ndarray:
-    img = Image.open(infilename)
-    img.load()
-    data = np.asarray(img, dtype="int32")
-    return data
+def load_image(data):
+    image_processor = SegformerImageProcessor.from_pretrained("nvidia/mit-b0")
+    raw_image = Image.open(BytesIO(data)).convert("RGB")
+    inputs = image_processor(images=raw_image, return_tensors="pt")
+
+    return inputs
 
 
-def load_model(model_path: str) -> CNN:
-    model = CNN(1, 4)
-    model.load_state_dict(
-        torch.load(model_path, map_location=torch.device("cpu"))["model"]
-    )
-    return model
+def load_img_classification_model():
+    return SegformerForImageClassification.from_pretrained("nvidia/mit-b0")
 
 
-def predict_octmnist(image_array: np.ndarray, model_path: str):
-    transform = transforms.Compose(
-        [
-            transforms.ToTensor(),
-        ]
-    )
+def predict_img_labels(inputs, model):
 
-    input = transform(image_array)
-    input = input.unsqueeze(0)
-    input = input.type(torch.float32)
+    outputs = model(**inputs)
+    logits = outputs.logits
 
-    model = load_model(model_path)
+    predicted_class_index = logits.argmax(-1).item()
 
-    model.eval()
-    with torch.no_grad():
-        output = model(input)
-        pred = torch.argmax(output, dim=1).item()
-    return {"class": pred, "label": octmnist_classes[str(pred)]}
+    return model.config.id2label[predicted_class_index].split(", ")[0]

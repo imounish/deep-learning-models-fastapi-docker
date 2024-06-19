@@ -4,7 +4,13 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install fastapi uvicorn joblib numpy scikit-learn torch torchvision medmnist python-multipart pillow transformers
+RUN mkdir -p ~/.cache/huggingface
+
+RUN cp -R model/models--Salesforce--blip-image-captioning-base ~/.cache/huggingface/
+
+RUN pip install fastapi uvicorn joblib numpy scikit-learn torch torchvision python-multipart pillow transformers timm einops
+
+# RUN pip install flash-attn --no-build-isolation
 
 EXPOSE 8000
 
