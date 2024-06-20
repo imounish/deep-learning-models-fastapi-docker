@@ -541,8 +541,6 @@ Use an API testing tool like Postman or curl to send a POST request.
 
   - We have specified the `min` and `max` query parameters and the model as `bart` for this text summarization.
 
-will this work/ for where to go from here
-
 ## Where to Go from Here
 
 - We can delve deeper into our API endpoints for image classification and text summarization. Also, experiment with different inputs to understand the capabilities and performance of our models. For this, we could refer to the endpoint documentation to explore all available options and parameters for customization.
